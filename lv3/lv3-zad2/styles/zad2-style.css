@@ -1,0 +1,78 @@
+﻿body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+.card{
+  width: 500px;
+  height: 250px;
+  background-color: red;
+  border: 3px solid black;
+}
+.card article img{
+  overflow-x: 250px;
+  position: right;
+  height: 100%;
+}
+.card header, footer{
+  height: 30px;             /* pravilo koje cilja na zaglavlje i podnozje kartice */
+  padding: 10px;
+}
+
+h2, p {
+  margin: 0px;        /*pravilo koje cilja sve h2 i p elemente*/
+ }
+
+.card article{
+    height: 120px;                              /*postavljanje visine i boje pozadine article elementu*/
+    background-color: rgba(0,0,0,0.5);
+}
+h2{
+  font-size: 20px;                            /*pravilo za h2 element*/
+  line-height: 30px;
+}
+
+.card footer p {
+  font-size: 15px;                              /* pravilo za p element unutar podnozja */
+  line-height: 30px;
+}
+.card article p {
+  padding: 10px;                                /* pravilo za p eleemnt unutar article*/
+  color: white;
+}
+/* Selektori koji se trebaju spariti s pravilima */
+
+.card article img
+.card footer
+.card header
+.card
+
+/* Pravila koja se moraju spariti sa selektorima */
+
+{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+{
+  max-height: 100%;
+  float: right;
+}
